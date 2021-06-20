@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const client = new Client();
 const message_data = require('./databases/data');
 var prefix = "$";
-var url = "mongodb+srv://arondt:arondata_lol@arondata.epf0b.mongodb.net/looks?retryWrites=true&w=majority";
+var url = "mongodb.connect";
 var _list = "";
 var commands = {
     credits : "to show your credits count \n you can use this command to show the user credits count by mention him !",
@@ -146,4 +146,4 @@ client.on('message',message => {
 
 
 
-client.login("ODUyOTcxODM4MDAyMjk4OTMx.YMOl7Q.JFBqnDvayd-Jgxds7SrXIHL1upY");
+client.login(TOKEN);
